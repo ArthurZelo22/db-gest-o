@@ -4,7 +4,7 @@ CREATE TABLE colaboradores (
     id_colaborador SERIAL PRIMARY KEY,
     nome VARCHAR(100) NOT NULL,
     email VARCHAR(100) NOT NULL UNIQUE,
-    senha VARCHAR(50) NOT NULL, -- Armazenada em texto simples conforme requisito
+    senha VARCHAR(50) NOT NULL,
     ativo BOOLEAN NOT NULL DEFAULT TRUE
 );
 
